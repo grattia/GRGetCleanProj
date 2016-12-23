@@ -13,17 +13,17 @@
 
 ### Reading common files with features names and activity Labels
 ### Read Training Data
- Read subject Data
- Reading Train Data as fixed format. it will read nFeatures columns of 16 characters
- Reading Activity ID data
- setting column name for activity
- Put together the Subject Id, Activity Id and Data in one data frame
+ Read subject Data,
+ Reading Train Data as fixed format. it will read nFeatures columns of 16 characters, 
+ Reading Activity ID data, 
+ setting column name for activity,
+ Put together the Subject Id, Activity Id and Data in one data frame.
 
 ### Reading Test Data. Same steps as done for Train data
-  Read subject Data
-  Rea Test Data
-  Read Activity ID data
-  Put together the Subject Id, Activity Id and Data in one data frame
+  Read subject Data,
+  Rea Test Data,
+  Read Activity ID data,
+  Put together the Subject Id, Activity Id and Data in one data frame,
 
 ### Step 1.
 ### Merges the training and the test sets to create one data set.
@@ -32,11 +32,11 @@
 ### Extracts only the measurements on the mean and standard deviation for each measurement.
 
 ### Step 3
-### Uses descriptive activity names to name the activities in the data set
- assign column names to activity file
- Merge activity file with dataset 
- refactor activity to keep the original order
- remove the activityId column from dataframe
+### Uses descriptive activity names to name the activities in the data set.
+ assign column names to activity file,
+ Merge activity file with dataset ,
+ refactor activity to keep the original order,
+ remove the activityId column from dataframe.
 
 ### Step 4
 ### Appropriately labels the data set with descriptive variable names.
@@ -52,16 +52,16 @@ substitute -mean() as Mean,
 substitute -std() as StandardDeviation,
 substitute -meanFreq as MeanFrequency,
 remove all the remaining special characteres,
-set names to lowercase
+set names to lowercase.
 
 ### Step 5
 ### From the data set in step 4, creates a second, independent tidy data set 
 ### with the average of each variable for each activity and each subject.
 
- use dplyr
- group the dataset by activity and subject
- summarize using mean for all columns
- write summarizedatasetMeanStd on disk
+ use dplyr,
+ group the dataset by activity and subject,
+ summarize using mean for all columns,
+ write summarizedatasetMeanStd on disk.
  
  
  ### About source dataset:
